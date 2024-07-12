@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        @font-face {
+            font-family: rubik;
+            src: url(../Rubik/Rubik-VariableFont_wght.ttf);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 380px;
+            height: 380px;
+            margin: 50px;
+            /* border: 1px solid rgba(0, 0, 0, 0.10); */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            display: flex;
+            font-family: rubik;
+            flex-direction: column;
+            padding: 20px 10px 0 20px;
+        }
+
+        img {
+            width: 340px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-top: 5px;
+            line-height: 32px;
+            font-weight: bold;
+        }
+
+        hr {
+            width: 75%;
+            border: 1px solid rgba(128, 128, 128, 0.27);
+            float: left;
+            margin-top: 7px;
+        }
+
+        #price {
+            font-size: 18px;
+            font-weight: 700;
+            /* line-height: 24px; */
+            color: rgb(102, 116, 204);
+            padding-right: 8px;
+        }
+
+        #off {
+            font-size: 18px;
+            font-weight: 700;
+            /* line-height: 24px; */
+            color: rgb(119, 124, 133);;
+            padding-right: 8px;
+        }
+        #offer{
+            background-color: #1DD1A1;
+            color: #fff;
+            padding: 4px;
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: 15px;
+            /* line-height: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sec-1">
+            <img src="Web_Dev_670f900667.jpg" alt="catalog image">
+            <p>Web Development Master Course @dot Batch</p>
+            <hr /><br>
+        </div>
+        <div class="sec-2">
+            <span id="price">₹4500</span>
+            <span id="off"><del>₹6500</del></span>
+            <span id="offer">42% off</span>
+        </div>
+    </div>
+</body>
+
+</html>
