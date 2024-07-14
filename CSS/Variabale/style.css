@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --dark-red: #981a2c;
+  }
+  /* :root {
+  
+  } */
+  .container {
+    height: 300px;
+    width: 300px;
+    border: 1px solid red;
+    background-color: aqua;
+    background-color: var(--dark-red);
+  }
+  .box {
+    border: 1px solid yellow;
+    background-color: green;
+    color: var(--dark-red);
+  }
