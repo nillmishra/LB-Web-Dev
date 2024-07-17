@@ -50,49 +50,49 @@
 
                 <ul class="flex space-x-6">
                     <li
-                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group">
+                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group hidden lg:block">
                         <a href="#">Payments</a>
                         <div
                             class="absolute bottom-0 w-full  h-1 bg-lightBlue transition-all duration-200 hidden group-hover:block">
                         </div>
                     </li>
                     <li
-                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group">
+                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group hidden lg:block">
                         <a href="#">Banking</a>
                         <div
                             class="absolute bottom-0 w-full  h-1 bg-lightBlue transition-all duration-200 hidden group-hover:block">
                         </div>
                     </li>
                     <li
-                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group">
+                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group hidden lg:block">
                         <a href="#">Corparate Card</a>
                         <div
                             class="absolute bottom-0 w-full  h-1 bg-lightBlue transition-all duration-200 hidden group-hover:block">
                         </div>
                     </li>
                     <li
-                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group">
+                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group hidden lg:block">
                         <a href="#">Payroll</a>
                         <div
                             class="absolute bottom-0 w-full  h-1 bg-lightBlue transition-all duration-200 hidden group-hover:block">
                         </div>
                     </li>
                     <li
-                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group">
+                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group hidden lg:block">
                         <a href="#">Resources</a>
                         <div
                             class="absolute bottom-0 w-full  h-1 bg-lightBlue transition-all duration-200 hidden group-hover:block">
                         </div>
                     </li>
                     <li
-                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group">
+                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group hidden lg:block">
                         <a href="#">Support</a>
                         <div
                             class="absolute bottom-0 w-full  h-1 bg-lightBlue transition-all duration-200 hidden group-hover:block">
                         </div>
                     </li>
                     <li
-                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group">
+                        class="cursor-pointer py-7 text-white font-mullish transition-all duration-200 hover:text-lightBlue relative group hidden lg:block">
                         <a href="#">Pricing</a>
                         <div
                             class="absolute bottom-0 w-full  h-1 bg-lightBlue transition-all duration-200 hidden group-hover:block">
@@ -117,7 +117,7 @@
         </nav>
         <!--Hero Section-->
         <section class="bg-deepBlue relative">
-            <div class="w-10/12 max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto">
+            <div class="w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center mx-auto">
                 <div class="space-y-8">
                     <h1 class="font-mullish text-[40px] leading-[1.2] text-white ">Power your finance, grow your
                         business
@@ -177,16 +177,16 @@
                                 <span>In-depth Reporting and Insights</span>
                             </li>
                         </ul>
-                        <div class="flex flex-row items-center space-x-4">
+                        <div class="flex flex-col-reverse md:flex-row items-center space-x-4">
                             <button
-                                class="py-[14px] px-[18px] font-mullish text-white bg-lightBlue rounded-md font-bold transition-all duration-200 hover:text-lightBlue500 lg:flex items-center">Sign
+                                class="py-[14px] px-[18px] font-mullish text-white w-full md:w-fit bg-lightBlue rounded-md font-bold transition-all duration-200 hover:text-lightBlue500 lg:flex items-center">Sign
                                 Up Now
                                 <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
                                     <path fill="currentColor"
                                         d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
                                     </path>
                                 </svg></button>
-                            <div class="flex items-center cursor-pointer group">
+                            <div class="flex items-center  cursor-pointer group">
                                 <a href="#" class="font-mullish font-bold text-lightBlue500 
                             group-hover:text-grayBlue transition-all duration-200">Know More</a>
                                 <i class="gg-chevron-right w-5 h-5 text-lightBlue500 
@@ -194,9 +194,9 @@
                             </div>
                         </div>
                     </div>
-                    <img src="assets/payment-suite.png" class="absolute max-w-[550px] right-0 bottom-0" alt="">
+                    <img src="assets/payment-suite.png" class="max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block" alt="">
                 </div>
-                <div class="grid grid-cols-3 gap-4 mt-10">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 pb-14">
                     <div class="w-full min-h-[15rem] relative cursor-pointer ">
                         <img src="assets/payment-link-icon.svg" alt="" class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
                     transition-all duration-200">
@@ -453,11 +453,11 @@
                                     <span>View financial insights at a glance</span>
                                 </li>
                             </ul>
-                            <div class="flex flex-row items-center space-x-4">
+                            <div class="items-center flex flex-col-reverse md:flex-row space-x-4">
                                 <button class="relative bg-lightBlue flex items-center 
                       place-content-center md:justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md
-                       font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200
-                       self-stretch md:w-fit">
+                       font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 self-stretch
+                        md:w-fit">
                                     Sign Up
                                     <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] 
                           flex justify-center items-center">
@@ -479,7 +479,7 @@
                             </div>
                         </div>
                         <img src="assets/buisness-banking.png"
-                            class="absolute max-w-[600px] bottom-0 right-0 caret-zinc-400" alt="">
+                            class=" max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block caret-zinc-400" alt="">
                     </div>
                     <!--card box-->
                     <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 pb-14">
