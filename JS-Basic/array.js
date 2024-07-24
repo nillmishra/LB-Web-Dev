@@ -153,5 +153,18 @@ let items = [1,2,-6,-4]
 })
 console.log(items)
 
+//reducing array
+
+let arr9 = [1,2,3,4,5,6];
+let total = 0;
+
+for(let value of arr9){
+    total = total + value;
+}
+
+console.log(total);
+
+let totalSum = arr9.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
 
+console.log(totalSum);
