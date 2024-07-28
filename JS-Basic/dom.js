@@ -59,3 +59,13 @@ for(let i = 1; i<=100; i++){
     myDiv.appendChild(newElement)
 }
 document.body.appendChild(myDiv)
+
+
+//adding 100 para
+
+// for(let i = 1; i<=100; i++){
+//     let newElement = document.createElement('p')
+//     newElement.textContent = 'This is para' + i
+//     document.body.appendChild(myDiv)
+// }
+    
