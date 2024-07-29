@@ -41,8 +41,3 @@ let pinkyPromise = new Promise(function(resolve, reject){
 pinkyPromise.then((value) => {console.log(value)}, (error) => {console.log("Recived an error")})
 
 
-async function abcd(){
-    console.log("Nill Mishra")
-    return 7;
-}
-console.log(abcd())
