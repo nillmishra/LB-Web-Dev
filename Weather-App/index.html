@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
     <title>Weather-App</title>
 </head>
-
 <body>
     <div class="wrapper">
         <h1>Weather App</h1>
         <div class="sub-heading">
-            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab current-tab" data-userWeather>Your Weather</p>
             <p class="tab" data-searchWeather>Search Weather</p>
         </div>
 
-
         <div class="weather-container">
             <!--Grant Location-->
-            <div class="grantLocation">
+            <div class="grantLocation sub-head">
                 <img src="weather-app-images/location.png" alt="" height="80px" width="80px">
-                <p>Grant Location Access</p>
-                <p>Alloe Access TO Get Weather Information</p>
-                <button class="lcn-btn" data-accessLocation>Grant Access</button>
+                <p class="para">Grant Location Access</p>
+                <p class="small-para">Allow Access To Get Weather Information</p>
+                <button class="btn" data-accessLocation>Grant Access</button>
             </div>
             <!--Search Form-->
             <form action="" class="form-container">
@@ -34,21 +35,26 @@
             </form>
 
             <!--Loading Screen-->
-            <div class="loading-container">
+            <div class="loading-container sub-head">
                 <img src="weather-app-images/loading.gif" width="150" height="150" alt="">
                 <p>Loading</p>
             </div>
 
+            <!--404 Not Found-->
+            <div class="not-found-container sub-head">
+                <img src="weather-app-images/not-found.png" width="150" height="150" alt="">
+                <p>City Not Found</p>
+            </div>
 
             <!--Normal UI-->
-            <div class="userInfo">
-                <div>
+            <div class="userInfo sub-head">
+                <div class="country-detail">
                     <p data-cityName></p>
-                    <img data-countyIcon>
+                    <img data-countryIcon>
                 </div>
-                <p data-wetherDesc></p>
+                <p data-weatherDesc></p>
                 <img data-weatherIcon>
-                <p data-temprature></p>
+                <p data-temperature></p>
                 <div class="parameter-container">
                     <div class="parameter">
                         <img src="weather-app-images/wind.png" alt="">
@@ -71,5 +77,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
