@@ -1,0 +1,8 @@
+.mfg-date{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    align-items: center;
+    color: white;
+    padding: 4px;
+}
