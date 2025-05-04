@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override autofill background */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #161D29 inset !important;
+  -webkit-text-fill-color: #F5F7FA !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+html,
+body {
+    overflow: hidden;
+}

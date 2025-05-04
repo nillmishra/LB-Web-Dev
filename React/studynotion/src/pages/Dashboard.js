@@ -2,9 +2,8 @@ import React from "react";
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <p>Welcome to your dashboard!</p>
+    <div className="flex flex-col items-center justify-center text-white text-3xl h-full">
+      <p>Welcome to your StudyNotion!</p>
     </div>
   );
 }

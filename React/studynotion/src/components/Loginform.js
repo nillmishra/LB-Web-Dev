@@ -22,47 +22,60 @@ const Loginform = ({setIsLoggedIn}) => {
         e.preventDefault();
         setIsLoggedIn(true);
         toast.success("Logged In")
+        const userData = { ...formData };
+        console.log(userData);
         navigate("/dashboard");
         // Add your login logic here
     }
     const [showPassword, setShowPassword] = useState(false);
     return (
-        <form onSubmit={submitHandler}>
-            <label ><p>
-                Email Address<sup>*</sup>
-            </p>
+        <form
+            onSubmit={submitHandler}
+            className="flex flex-col w-full gap-y-4 mt-6"
+        >
+            <label className="w-full">
+                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]">
+                    Email Address
+                    <sup className="text-pink-200">*</sup>
+                </p>
+
                 <input
                     type="email"
-                    name="email"
                     required
+                    value={formData.email}
                     placeholder="Enter your email address"
                     onChange={changeHandler}
-                    value={formData.email} />
-
+                    name="email"
+                    className="bg-[#161D29] rounded-[0.75rem] w-full p-[12px] text-richblack-5"
+                />
             </label>
-            <label ><p>
-                Password<sup>*</sup>
-            </p>
+
+            <label className="w-full relative">
+                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]">
+                    Password
+                    <sup className="text-pink-200">*</sup>
+                </p>
+
                 <input
-                    type={showPassword ? ("text") : ("password")}
-                    name="password"
+                    type={showPassword ? "text" : "password"}
                     required
-                    placeholder="Enter your password"
+                    value={formData.password}
+                    placeholder="Enter Password"
                     onChange={changeHandler}
-                    value={formData.password} />
-                <span onClick={() => setShowPassword((prev) => !prev)}>
-                    {showPassword ? (<AiOutlineEyeInvisible />) : (<AiOutlineEye />)}
+                    name="password"
+                    className="bg-richblack-800 rounded-[0.75rem] w-full p-[12px] text-richblack-5"
+                />
+
+                <span onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-[38px] cursor-pointer ">
+                    {showPassword ? <AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF' /> : <AiOutlineEye fontSize={24} fill='#AFB2BF' />}
                 </span>
+
                 <Link to="#">
-                    <p>
-                        Forgot Password?
-                    </p></Link>
+                    <p className="text-xs mt-1 text-blue-100 max-w-max ml-auto">Forgot Password</p>
+                </Link>
             </label>
 
-            <button>
-                Sign In
-            </button>
-
+            <button className="bg-yellow-50 py-[8px] px-[12px] rounded-[8px] mt-6 font-medium text-richblack-900">Sign in</button>
         </form>
     )
 }
